@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <HTML>
 	<HEAD>
 		<TITLE> The Tidal Wave </TITLE>
@@ -7,54 +7,6 @@
 		body{
 			margin-left: 3%;
 			margin-right: 3%;
-		}
-		.studArticle {
-			background-color: #e6e6e6;
-			padding: 25px;
-			border: 10px;
-			border-style: solid;
-			border-color: rgb(102, 153, 255);
-			margin-top: 10px;
-			margin-bottom:10px;
-		}
-		
-		#directory {
-			width: 100%;
-		}
-		
-		#directory ul {
-			list-style: none;
-			background-color: #808080;
-			text-align: center;
-			padding: 0;
-			margin: 0;
-		}
-		  
-		#directory li {
-			display: inline-block;
-			margin-right: -4px;
-			font-size: 1.2em;
-			line-height: 40px;
-		}
-
-		a.active {
-		  background-color: #fff;
-		  color: #444;
-		  cursor: default;
-		}
-		
-		#directory a:hover {
-		  background-color: rgb(102, 153, 255);
-		  color: #000000;
-		}
-		
-		#directory a {
-			text-decoration: none;
-			color: #fff;
-			display: block;
-			transition: .3s background-color;
-			width: 120px;
-			height: 5%;
 		}
 		
 		#home {
@@ -136,6 +88,68 @@
 			-o-background-size: cover;
 			background-size: cover;
 		}
+		
+		/*~~~~~~~~~~~~~~~~~~~~~Start of Directory Style~~~~~~~~~~~~~~~~~~~~~*/	
+		#directory {
+			width: 100%;
+		}
+		
+		#directory ul {
+			list-style: none;
+			background-color: #808080;
+			text-align: center;
+			padding: 0;
+			margin: 0;
+		}
+		  
+		#directory li {
+			display: inline-block;
+			margin-right: -4px;
+			font-size: 1.2em;
+			line-height: 40px;
+		}
+
+		a.active {
+		  background-color: #fff;
+		  color: #444;
+		  cursor: default;
+		}
+		
+		#directory a:hover {
+		  background-color: #ff4d4d;
+		}
+		
+		#directory a {
+			text-decoration: none;
+			color: #fff;
+			display: block;
+			transition: .3s background-color;
+			width: 120px;
+			height: 5%;
+		}
+		
+		.dropdown {
+			position: relative;
+			display: inline-block;
+		}
+		
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #808080;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			padding: 12px 16px;
+		}
+		
+		.dropdown-content a:hover{
+			background-color: #808080;
+		}
+		
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+	/*~~~~~~~~~~~~~~~~~~~~~End of Directory Style~~~~~~~~~~~~~~~~~~~~~*/
 		</style>
 		<link rel="icon" type="image/png" href=http://40.media.tumblr.com/a367e8531ec385de79dc3d3e8da04d61/tumblr_n8yt48mXXC1rafzaso1_500.png">
 	</HEAD>
@@ -146,7 +160,13 @@
                 <ul>
                     <li><a href="http://thetidalwave.github.io/">Home</a></li>
                     <li><a href="articles.html">Articles</a></li>
+					<div class="dropdown">
                     <li><a href="editorials.html">Editorials</a></li>
+						<div class="dropdown-content">
+							<a syle="background-color: #808080;" href="editorials.html#studentVoice">Student Voice</a>
+							<a syle="background-color: #808080;" href="editorials.html#richmondPromise">Richmond Promise</a>
+						</div>
+					</div>
 					<li><a href="http://thetidalwave.github.io/#about">About Us</a></li>
                     <li><a href="http://thetidalwave.github.io/#contact">Contact</a></li>
                 </ul>
@@ -166,9 +186,11 @@
 			<hr>
 			<div id="journalist"></div>
 			<h2>About Us</h2>
-			<h5>Who Are We?</h5>
+			<h4>Who Are We?</h4>
 			<p>Antonio Martinez, editor, and Patricia Ornelas, web developer, are the creators of this webpage. Joined by the writers, photographers, and journalists of Making Waves Academy, we coommunicate the latest news to the public. We are journalists who want to know the truth and expose it.</p>
-			<p>*Insert paragraph about the class/club and what we stand for.*</p>
+			<p>We are a student independent website based in Richmond, California. We aim to create an independent student voice without restrictions from our school. By doing so, we plan to avoid the censorship that may come from controversial topics that need to be discussed. </p>
+			<p>Censorship causes people to be unaware and uninformed of important issues that exist within our community. We seek to promote conversation in order to help fix issues within our community. By creating a safe place for students, staff, and parents, we hope to bring light to issues and concerns that might not be brought up otherwise. This website’s goal is to ensure that students know that everyone has a voice that deserves to be heard, by helping their voices gain recognition in the most productive and efficient way. Our student website will hopefully empower other students in other schools to do similar things by being exposed to our news site. </p>
+			<p> &ldquo;To learn who controls you, simply find out who you are not allowed to criticize.&rdquo; </p>
 		</div>
 		<hr>
 
