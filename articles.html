@@ -7,16 +7,10 @@
 		<link rel="icon" type="image/png" href=http://40.media.tumblr.com/a367e8531ec385de79dc3d3e8da04d61/tumblr_n8yt48mXXC1rafzaso1_500.png">
 		<style>
 		body {
-			margin-left: 3%;
-			margin-right: 3%;
+			margin-left: 1%;
+			margin-right: 1%;
 		}
 		
-		#articles {
-			width:80%;
-			float:left;
-			padding: 10px;
-			border-left: solid #e6e6e6;
-		}
 		.studArticle {
 			background-color: #e6e6e6;
 			padding: 25px;
@@ -38,10 +32,23 @@
 		}
 		
 		#otherA {
-			width:20%;
-			float: left;
 			padding:5px;
 			margin-top:15px;
+			position:fixed;
+			left: 1%;
+			right: 80%;
+		}
+		
+		#otherA a {
+			color: #ff0000;
+		}
+		
+		#articles {
+			padding: 10px;
+			left: 20%;
+			right: 1%;
+			position: absolute;
+			border-left: solid #f2f2f2;
 		}
 		
 		h1, h2{
@@ -54,15 +61,16 @@
 			display: block;
 			margin-top: 0.5em;
 			margin-bottom: 0.5em;
-			margin-left: auto;
-			margin-right: auto;
 			border-style: inset;
 			color: #f2f2f2;
 			border-width: thin;
 		}
 		/*~~~~~~~~~~~~~~~~~~~~~Start of Directory Style~~~~~~~~~~~~~~~~~~~~~*/	
 		#directory {
+			top: 0;
 			width: 100%;
+			position:fixed;
+			z-index: 2;
 		}
 		
 		#directory ul {
@@ -140,7 +148,9 @@
 				<li><a href="http://thetidalwave.github.io/#contact">Contact</a></li>
 			</ul>
 		</div>
-	
+		
+		<br />
+		
 		<div id="otherA">
 			<h3>Articles</h3>
 			<hr>
