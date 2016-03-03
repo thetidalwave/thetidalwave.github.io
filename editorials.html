@@ -4,6 +4,7 @@
 		<title>The Tidal Wave</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css">
 		<link rel="icon" type="image/png" href=http://40.media.tumblr.com/a367e8531ec385de79dc3d3e8da04d61/tumblr_n8yt48mXXC1rafzaso1_500.png">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<style>
 		.studEditorial {
 			background-color: #f2f2f2;
@@ -16,22 +17,26 @@
 		}
 		
 		#otherE {
-			width:20%;
-			float:left;
 			padding:5px;
 			margin-top:15px;
+			position:fixed;
+		}
+		
+		#otherE a {
+			color: #ff0000;
 		}
 		
 		#editorials {
-			/*width:80%;
-			float:left;*/
 			padding: 10px;
-			/*border-left: solid #f2f2f2;*/
+			left: 20%;
+			right:0;
+			position:absolute;
+			border-left: solid #f2f2f2;
 		}
 		
 		body {
-			margin-left: 3%;
-			margin-right: 3%;
+			margin-left: 1%;
+			margin-right: 1%;
 		}
 		
 		h1, h2{
@@ -52,7 +57,10 @@
 		}
 	/*~~~~~~~~~~~~~~~~~~~~~Start of Directory Style~~~~~~~~~~~~~~~~~~~~~*/	
 		#directory {
+			top: 0;
 			width: 100%;
+			position:fixed;
+			z-index: 2;
 		}
 		
 		#directory ul {
@@ -130,104 +138,130 @@
                     <li><a href="http://thetidalwave.github.io/#contact">Contact</a></li>
                 </ul>
 			</div>
-		<!--<div id="otherE">
-			<h3>Other Editorials</h3>
+		<br />
+		<div id="otherE">
+			<h3>Editorials</h3>
 			<hr>
-			<h5>Title of Editorial 1</h5>
-			<i>By: Author's Name</i>
-			<p>Short Description. Each journalist can write their own summary. If not, the editor can write it for them.</p>
+			<h5><a href="#markzuckerberg">Mark Zuckerberg's Closet</a></h5>
+			<i>By: Professional Journalist</i>
 			<hr>
-			<h5>Another one</h5>
-			<i>By: Author's Name</i>
-			<p>Short Description will go here. Each journalist can write their own summary.</p>
+			<h5><a href="#mgrichmondpromise">Richmond Resident Perspective</a></h5>
+			<i>By: Melissa Garibay</i>
 			<hr>
-		</div>-->
+			<h5><a href="#acrichmondpromise">Richmond Resident Perspective</a></h5>
+			<i>By: Arturo Castaneda</i>
+			<hr>
+			<h5><a href="#acrichmondpromise">Richmond Resident Perspective</a></h5>
+			<i>By: Arturo Castaneda</i>
+			<hr>
+			<h5><a href="#aorichmondpromise">Non-Richmond Resident Perspective</a></h5>
+			<i>By: Abril Ortega</i>
+			<hr>
+			<h5><a href="#porichmondpromise">Richmond Resident Perspective</a></h5>
+			<i>By: Patricia Ornelas</i>
+			<hr>
+			<h5><a href="#lgrichmondpromise">Richmond Resident Perspective</a></h5>
+			<i>By: Luis Gonzalez</i>
+		</div>
 		
 		<div id="editorials">
 			<center><h2>The Tidal Wave | Student Editorials</h2></center>
 			<center><p><em><b>Disclaimer!</b></em> The following are student opinion articles. We do not promote any of their ideas or opinions.</p></center>
 			<div id="studentVoice">
 				<h3>Student Voice Articles</h3>
+				
 				<div class= "studEditorial">
-					<h4 class="title">Mark Zuckerberg&rsquo;s Closet</h4>
-					<p class = "byline"> <strong>By: Some Journalist</strong> | January 2016 | Richmond, CA</p>
-					<hr>
-					<img src="https://scontent.xx.fbcdn.net/hphotos-xap1/v/t1.0-0/p526x296/12647560_10102616790362931_3270313262875234676_n.jpg?oh=50df570da376c068a428731c87f2e672&oe=573C7A55" height="300px"/>
-					<br/>
-					<p><i>What are you wearing?</i></p>
-					<p>That&rsquo;s a question that&rsquo;s tossed at chic celebrities strolling the red carpet. It&rsquo;s also a question Facebook chief executive Mark Zuckerberg will never get. After all, his wardrobe is 50 shades of gray, minus 49 of them.</p>
-					<p>Day in and day out Zuckerberg dresses in the same gray T-shirt. Unseasonable weather might trigger Zuckerberg to grab a gray hoodie. On the rarest of occasions - such as a White House visit - Zuckerberg has been seen in a suit. (Surprisingly, it&rsquo;s not gray.) </p>
-					<p>Monday Zuckerberg gave everyone a peek into his closet, as he marked his return from paternity leave. &quot;What should I wear?&quot; he joked.</p>
-					<p>The photo featured nine identical gray T-shirts, and seven gray hoodies. The T-shirts hang in a neat line. It&rsquo;s the stately presentation most of us reserve for our more formal clothes. </p>
-					<p>Zuckerberg has previously explained his dull get-ups. He&rsquo;s wary of taking on too many decisions, and directing his energy away from his work on Facebook. </p>
-					<p>&quot;I feel like I&rsquo;m not doing my job if I spend any of my energy on things that are silly or frivolous about my life,&quot; Zuckerberg explained in 2014.</p>
-					<p>While Zuckerberg has said he only works 50 to 60 hours a week, he&rsquo;s clearly obsessed with Facebook&rsquo;s mission to connect the world.</p>
-					<p>&quot;If you count all the time I&rsquo;m focused on our mission, that&rsquo;s basically my whole life,&quot; he once said. </p>
-					<p>Zuckerberg isn&rsquo;t the only person to bring an extreme approach to their wardrobe. A middle-aged Steve Jobs made light jeans and black turtlenecks his uniform. The approach worked well for Jobs, who rebuilt Apple and churned out the iPod, iPhone and iPad. </p>
-					<p>The strategy worked for them, which raises the question - why aren&rsquo;t more of us trying this?</p>
+					<div id="#markzuckerberg">
+						<h4 class="title">Mark Zuckerberg&rsquo;s Closet</h4>
+						<p class = "byline"> <strong>By: Professioan Journalist from Outside of MWA</strong> | January 2016 | Richmond, CA</p>
+						<hr>
+						<img src="https://scontent.xx.fbcdn.net/hphotos-xap1/v/t1.0-0/p526x296/12647560_10102616790362931_3270313262875234676_n.jpg?oh=50df570da376c068a428731c87f2e672&oe=573C7A55" height="300px"/>
+						<br/>
+						<p><i>What are you wearing?</i></p>
+						<p>That&rsquo;s a question that&rsquo;s tossed at chic celebrities strolling the red carpet. It&rsquo;s also a question Facebook chief executive Mark Zuckerberg will never get. After all, his wardrobe is 50 shades of gray, minus 49 of them.</p>
+						<p>Day in and day out Zuckerberg dresses in the same gray T-shirt. Unseasonable weather might trigger Zuckerberg to grab a gray hoodie. On the rarest of occasions - such as a White House visit - Zuckerberg has been seen in a suit. (Surprisingly, it&rsquo;s not gray.) </p>
+						<p>Monday Zuckerberg gave everyone a peek into his closet, as he marked his return from paternity leave. &quot;What should I wear?&quot; he joked.</p>
+						<p>The photo featured nine identical gray T-shirts, and seven gray hoodies. The T-shirts hang in a neat line. It&rsquo;s the stately presentation most of us reserve for our more formal clothes. </p>
+						<p>Zuckerberg has previously explained his dull get-ups. He&rsquo;s wary of taking on too many decisions, and directing his energy away from his work on Facebook. </p>
+						<p>&quot;I feel like I&rsquo;m not doing my job if I spend any of my energy on things that are silly or frivolous about my life,&quot; Zuckerberg explained in 2014.</p>
+						<p>While Zuckerberg has said he only works 50 to 60 hours a week, he&rsquo;s clearly obsessed with Facebook&rsquo;s mission to connect the world.</p>
+						<p>&quot;If you count all the time I&rsquo;m focused on our mission, that&rsquo;s basically my whole life,&quot; he once said. </p>
+						<p>Zuckerberg isn&rsquo;t the only person to bring an extreme approach to their wardrobe. A middle-aged Steve Jobs made light jeans and black turtlenecks his uniform. The approach worked well for Jobs, who rebuilt Apple and churned out the iPod, iPhone and iPad. </p>
+						<p>The strategy worked for them, which raises the question - why aren&rsquo;t more of us trying this?</p>
+					</div>
 				</div>
 			</div>
 			<div id="richmondPromise">
 				<h3>Richmond Promise Articles</h3>
-				<div class= "studEditorial">
-					<h4 class="title">Richmond Resident Perspective</h4>
-					<p class = "byline"> <strong>By: Melissa Garibay</strong> | October 2015 | Richmond, CA</p>
-					<hr>
-					<img src="https://d3n8a8pro7vhmx.cloudfront.net/radiofreerichmond/pages/865/attachments/original/1445460772/Melissa_Garibay.jpg?1445460772" height="300px"/>
-					<br/>
-					<p>My name is Melissa Garibay and I am a Richmond resident. I am currently in 12th grade at Making Waves Academy Public Charter School. </p>
-					<p>Often, as I do my homework I hear sirens of an ambulance as someone is being rushed to the hospital. Every day as I get on the public transportation bus to get to school, I have to pass the West County Detention Facility. On my way back home, we sometimes stop to pick up an ex-convict who was just released around the time I go home. </p>
-					<p>I am as much a part of this city as anyone else, even if I go to a public charter school. I live the same experiences as any other student my age. Why should people be denied being a part of the Richmond Promise simply because their parents wished for an education that would better prepare them for the college education? </p>
-					<p>I will be attending college next year. What is making this very difficult is that college tuition and loans are rising every day. My parents work extremely hard but they will not be able to cover all of my college costs at this rate. The thought of being penalized for seeking alternative educational opportunities, like attending a charter school, is frightening. It is my hope that my community might help me throughout this process, not push me back. </p>
+				
+				<div id="mgrichmondpromise">
+					<div class= "studEditorial">
+						<h4 class="title">Richmond Resident Perspective</h4>
+						<p class = "byline"> <strong>By: Melissa Garibay</strong> | October 2015 | Richmond, CA</p>
+						<hr>
+						<img src="https://d3n8a8pro7vhmx.cloudfront.net/radiofreerichmond/pages/865/attachments/original/1445460772/Melissa_Garibay.jpg?1445460772" height="300px"/>
+						<br/>
+						<p>My name is Melissa Garibay and I am a Richmond resident. I am currently in 12th grade at Making Waves Academy Public Charter School. </p>
+						<p>Often, as I do my homework I hear sirens of an ambulance as someone is being rushed to the hospital. Every day as I get on the public transportation bus to get to school, I have to pass the West County Detention Facility. On my way back home, we sometimes stop to pick up an ex-convict who was just released around the time I go home. </p>
+						<p>I am as much a part of this city as anyone else, even if I go to a public charter school. I live the same experiences as any other student my age. Why should people be denied being a part of the Richmond Promise simply because their parents wished for an education that would better prepare them for the college education? </p>
+						<p>I will be attending college next year. What is making this very difficult is that college tuition and loans are rising every day. My parents work extremely hard but they will not be able to cover all of my college costs at this rate. The thought of being penalized for seeking alternative educational opportunities, like attending a charter school, is frightening. It is my hope that my community might help me throughout this process, not push me back. </p>
+					</div>
 				</div>
 				
-				<div class= "studEditorial">
-					<h4 class="title">Richmond Resident Perspective</h4>
-					<p class = "byline"> <strong>By: Arturo Castaneda</strong> | October 2015 | Richmond, CA</p>
-					<hr>
-					<img src="https://d3n8a8pro7vhmx.cloudfront.net/radiofreerichmond/pages/857/attachments/original/1445284325/Arturo_Castaneda.jpg?1445284325" height="300px"/>
-					<br/>
-					<p>I am Arturo Castaneda, a Senior Representative at Making Waves Academy. I have been part of the Richmond community for over 15 years of my life, which has shaped the person I am today. Living in the Richmond community has driven me to work hard every single day, getting me to where I am today. </p>
-					<p>My accomplishments have been carving my path to go to Santa Clara University, my dream college. However, there is a very large obstacle to reach my destination: paying $60,000 for the tuition and all other materials necessary for my life in college. That is a very high price for college, and it makes me worry that I won&rsquo;t be able to reach my dream. My family puts in a lot of effort to earn money, but it is going to be very hard for them to support me financially with college. As the cost for education increases, it demands for more loans, leaving many students in debt for many years.  </p>
-					<p>Knowing that the Richmond Promise exists in my community, I know that it will be a very huge benefit to my family, my friends, and myself. Charter schools, such as Making Waves, should not be excluded from receiving the Richmond Promise Scholarship. Growing up in Richmond has not been easy on my life. I see many students&rsquo; dreams of going to college crushed because they are unable to afford it.  Recognizing what I am surrounded by makes me worry at times if I am going to be able to make it to college or not. </p>
-					<p>Sometimes I get scared and think to myself, <i>Am I going to end up like my friends?</i> I do not want to go into debt by taking out so many loans to be able to afford college, because I do not want to live life paying off college. Receiving the scholarship will provide not just extra support for me, but also for my family. The money that I receive from the scholarship will help me lower the percentage of taking out a loan, preventing me from paying interest.  </p>
-					<p>My family will also have fewer worries about affording college because, with the extra support, they won&rsquo;t have to worry about my dreams being crushed. They will have very big smiles on their faces, because they know that the scholarship creates a very high probability of me being able to afford college. The Richmond Promise Scholarship will make many students very happy, placing smile on their faces. Please include Charter schools into the Promise because we are students who also have a lot of potential to succeed. </p>
+				<div id="acrichmondpromise">
+					<div class= "studEditorial">
+						<h4 class="title">Richmond Resident Perspective</h4>
+						<p class = "byline"> <strong>By: Arturo Castaneda</strong> | October 2015 | Richmond, CA</p>
+						<hr>
+						<img src="https://d3n8a8pro7vhmx.cloudfront.net/radiofreerichmond/pages/857/attachments/original/1445284325/Arturo_Castaneda.jpg?1445284325" height="300px"/>
+						<br/>
+						<p>I am Arturo Castaneda, a Senior Representative at Making Waves Academy. I have been part of the Richmond community for over 15 years of my life, which has shaped the person I am today. Living in the Richmond community has driven me to work hard every single day, getting me to where I am today. </p>
+						<p>My accomplishments have been carving my path to go to Santa Clara University, my dream college. However, there is a very large obstacle to reach my destination: paying $60,000 for the tuition and all other materials necessary for my life in college. That is a very high price for college, and it makes me worry that I won&rsquo;t be able to reach my dream. My family puts in a lot of effort to earn money, but it is going to be very hard for them to support me financially with college. As the cost for education increases, it demands for more loans, leaving many students in debt for many years.  </p>
+						<p>Knowing that the Richmond Promise exists in my community, I know that it will be a very huge benefit to my family, my friends, and myself. Charter schools, such as Making Waves, should not be excluded from receiving the Richmond Promise Scholarship. Growing up in Richmond has not been easy on my life. I see many students&rsquo; dreams of going to college crushed because they are unable to afford it.  Recognizing what I am surrounded by makes me worry at times if I am going to be able to make it to college or not. </p>
+						<p>Sometimes I get scared and think to myself, <i>Am I going to end up like my friends?</i> I do not want to go into debt by taking out so many loans to be able to afford college, because I do not want to live life paying off college. Receiving the scholarship will provide not just extra support for me, but also for my family. The money that I receive from the scholarship will help me lower the percentage of taking out a loan, preventing me from paying interest.  </p>
+						<p>My family will also have fewer worries about affording college because, with the extra support, they won&rsquo;t have to worry about my dreams being crushed. They will have very big smiles on their faces, because they know that the scholarship creates a very high probability of me being able to afford college. The Richmond Promise Scholarship will make many students very happy, placing smile on their faces. Please include Charter schools into the Promise because we are students who also have a lot of potential to succeed. </p>
+					</div>
 				</div>
 				
-				<div class= "studEditorial">
-					<h4 class="title">NonRichmond Resident Perspective</h4>
-					<p class = "byline"> <strong>By: Abril Ortega</strong> | October 2015 | Richmond, CA</p>
-					<hr>
-					<p>In August 2014, it was announced that Chevron was giving the city of Richmond a check for $35 million. A final decision on how that money will be distributed will be made before the end of 2015. I understand that there are disagreements on which students should receive the help from this check, but there isn&rsquo;t any need for these disagreements. All students that are Richmond residents should be entitled to receive this money because it would be unfair for only some to get the money based on factors like the type of school the students attend. Charter schools were established with the purpose of bringing educational justice to the families that had not been given this by the district. Although charter schools might not be part of a district, they are still public schools. Therefore, Richmond residents that attend a charter school are still public school students and have the same need for the Richmond Promise as any other resident that attends a non-charter public school.</p>
-					<p>I am not a Richmond resident, but I do attend a charter school in Richmond, Making Waves Academy. Most of my peers are Richmond residents and I will stand up for them and say that they deserve the Richmond Promise as much as any other public school student. The students at my school all work hard as they are given rigorous school work every day of the week because they want to better their lives and the lives of their families. They see education as the key to their success, so they make sure to do everything they can to guarantee their acceptance to a college once they graduate high school. </p>
-					<p>My peers are exposed to the same struggles and dangers that any other student living in Richmond faces. A friend of mine lost her uncle in a shooting in front of Richmond High School not that long ago. Her parents knew that they wanted my friend and her siblings to receive a better education, where they would be safe and have the opportunities that would eventually result in a bright future. As a result my friend and her older brother were enrolled in Making Waves Academy. My friend&rsquo;s brother graduated last year with a high GPA and an acceptance to a top university. Unfortunately, my friend&rsquo;s family could not afford it and her brother was unable to attend the college of his choice. It would be devastating if the same thing would happen to my friend. However, I have hope that the City Council will make the best choice by providing the Richmond Promise for ALL Richmond residents. These financial issues might not be completely resolved with the help of the Richmond Promise, but they would sure be a step closer to being fixed. Charter students have struggles and dreams just like any other students, so my peers should not be penalized by not receiving the Richmond Promise. </p>
+				<div id="aorichmondpromise">
+					<div class= "studEditorial">
+						<h4 class="title">NonRichmond Resident Perspective</h4>
+						<p class = "byline"> <strong>By: Abril Ortega</strong> | October 2015 | Richmond, CA</p>
+						<hr>
+						<p>In August 2014, it was announced that Chevron was giving the city of Richmond a check for $35 million. A final decision on how that money will be distributed will be made before the end of 2015. I understand that there are disagreements on which students should receive the help from this check, but there isn&rsquo;t any need for these disagreements. All students that are Richmond residents should be entitled to receive this money because it would be unfair for only some to get the money based on factors like the type of school the students attend. Charter schools were established with the purpose of bringing educational justice to the families that had not been given this by the district. Although charter schools might not be part of a district, they are still public schools. Therefore, Richmond residents that attend a charter school are still public school students and have the same need for the Richmond Promise as any other resident that attends a non-charter public school.</p>
+						<p>I am not a Richmond resident, but I do attend a charter school in Richmond, Making Waves Academy. Most of my peers are Richmond residents and I will stand up for them and say that they deserve the Richmond Promise as much as any other public school student. The students at my school all work hard as they are given rigorous school work every day of the week because they want to better their lives and the lives of their families. They see education as the key to their success, so they make sure to do everything they can to guarantee their acceptance to a college once they graduate high school. </p>
+						<p>My peers are exposed to the same struggles and dangers that any other student living in Richmond faces. A friend of mine lost her uncle in a shooting in front of Richmond High School not that long ago. Her parents knew that they wanted my friend and her siblings to receive a better education, where they would be safe and have the opportunities that would eventually result in a bright future. As a result my friend and her older brother were enrolled in Making Waves Academy. My friend&rsquo;s brother graduated last year with a high GPA and an acceptance to a top university. Unfortunately, my friend&rsquo;s family could not afford it and her brother was unable to attend the college of his choice. It would be devastating if the same thing would happen to my friend. However, I have hope that the City Council will make the best choice by providing the Richmond Promise for ALL Richmond residents. These financial issues might not be completely resolved with the help of the Richmond Promise, but they would sure be a step closer to being fixed. Charter students have struggles and dreams just like any other students, so my peers should not be penalized by not receiving the Richmond Promise. </p>
+					</div>
 				</div>
 				
-				<div class = "studEditorial">
-					<h4 class="title">Richmond Resident Perspective</h4>
-					<p class = "byline"> <strong>By: Patricia Ornelas</strong> | October 2015 | Richmond, CA</p>
-					<hr>
-					<img src="https://d3n8a8pro7vhmx.cloudfront.net/radiofreerichmond/pages/871/attachments/original/1445634068/blogimage.jpg?1445634068" height="300px">
-					<br/>
-					<p>My family and I moved to the U.S. from Mexico seeking the American Dream. Since we were (and still are) low-income immigrants, we moved to the most affordable housing we could find nearby. Thus, we moved to Richmond. Here, my family and I have had trouble settling in due to the violence in the community. Our van has been stolen and shot at; we still have a bullet-hole in the hood that now serves as a constant reminder that we aren&rsquo;t safe. </p>
-					<p>Nevertheless, we have found many opportunities living here, for which we are grateful. I took it upon myself to express this gratitude by directing and implementing two meaningful community projects in Richmond. The first was Citywide Pride, a beautification project meant to promote pride in our community and debunk negative stereotypes. </p>
-					<p>The next had a similar objective but with different methodology: RichWhat was a talent show meant to promote positivity. I worked with the ESC of Richmond for both events. I have contributed vastly to the community and hope to continue to do so. </p>
-					<p>In school, I have served both as a leader and a scholar. I have a 4.24 GPA and will pursue a higher education. My career plan is to be a software engineer. Despite obstacles, I have worked hard and remained determined to reach that goal. However, that does not mean that the obstacles have gone away. </p>
-					<p>My family continues to struggle financially and will most likely not be able to fully fund my education. I hope the City Council agrees to include charter schools in the Richmond Promise, because we, too, are Richmond residents with dreams/challenges and we deserve equal opportunities. </p>
+				<div id="porichmondpromise">
+					<div class = "studEditorial">
+						<h4 class="title">Richmond Resident Perspective</h4>
+						<p class = "byline"> <strong>By: Patricia Ornelas</strong> | October 2015 | Richmond, CA</p>
+						<hr>
+						<img src="https://d3n8a8pro7vhmx.cloudfront.net/radiofreerichmond/pages/871/attachments/original/1445634068/blogimage.jpg?1445634068" height="300px">
+						<br/>
+						<p>My family and I moved to the U.S. from Mexico seeking the American Dream. Since we were (and still are) low-income immigrants, we moved to the most affordable housing we could find nearby. Thus, we moved to Richmond. Here, my family and I have had trouble settling in due to the violence in the community. Our van has been stolen and shot at; we still have a bullet-hole in the hood that now serves as a constant reminder that we aren&rsquo;t safe. </p>
+						<p>Nevertheless, we have found many opportunities living here, for which we are grateful. I took it upon myself to express this gratitude by directing and implementing two meaningful community projects in Richmond. The first was Citywide Pride, a beautification project meant to promote pride in our community and debunk negative stereotypes. </p>
+						<p>The next had a similar objective but with different methodology: RichWhat was a talent show meant to promote positivity. I worked with the ESC of Richmond for both events. I have contributed vastly to the community and hope to continue to do so. </p>
+						<p>In school, I have served both as a leader and a scholar. I have a 4.24 GPA and will pursue a higher education. My career plan is to be a software engineer. Despite obstacles, I have worked hard and remained determined to reach that goal. However, that does not mean that the obstacles have gone away. </p>
+						<p>My family continues to struggle financially and will most likely not be able to fully fund my education. I hope the City Council agrees to include charter schools in the Richmond Promise, because we, too, are Richmond residents with dreams/challenges and we deserve equal opportunities. </p>
+					</div>
 				</div>
 				
-				<div class = "studEditorial">
-					<h4 class="title">Richmond Resident Perspective</h4>
-					<p class = "byline"> <strong>By: Luis Gonzalez</strong> | October 2015 | Richmond, CA</p>
-					<hr>
-					<img src="https://d3n8a8pro7vhmx.cloudfront.net/radiofreerichmond/pages/857/attachments/original/1445284327/blogimage.jpg?1445284327" height="300px">
-					<br/>
-					<p>I have lived over 90% of my life in Richmond. I have seen and experienced events that have changed my life, for the better and for the worse. </p>
-					<p>By living in Richmond there have been many setbacks that I have faced. For example, gang violence, shootings, robberies, drugs and domestic violence. Those setbacks haven&rsquo;t just affected me physically, but also affected my educational career and future. </p>
-					<p>Despite the environment that I have grown up in, there have not been many opportunities to better my life. I am not just the only student that has faced setbacks. </p>
-					<p>So, in my opinion, only including traditional public schools in the Richmond Promise is completely absurd. We all have the same dreams, which is to graduate from high school and attend college. Students should be included in the Richmond Promise no matter what type of school they attend, because deep down, we are all students that want to better our lives. The benefits that scholarships give to students are incredible. They wouldn&rsquo;t just help me financially, but by taking away some of the stress that I have with trying to come up with money for my education, it allows me to expand my knowledge by experiencing new things, which would not be possible without the help from scholarships. </p>
+				<div id="lgrichmondpromise">
+					<div class = "studEditorial">
+						<h4 class="title">Richmond Resident Perspective</h4>
+						<p class = "byline"> <strong>By: Luis Gonzalez</strong> | October 2015 | Richmond, CA</p>
+						<hr>
+						<img src="https://d3n8a8pro7vhmx.cloudfront.net/radiofreerichmond/pages/857/attachments/original/1445284327/blogimage.jpg?1445284327" height="300px">
+						<br/>
+						<p>I have lived over 90% of my life in Richmond. I have seen and experienced events that have changed my life, for the better and for the worse. </p>
+						<p>By living in Richmond there have been many setbacks that I have faced. For example, gang violence, shootings, robberies, drugs and domestic violence. Those setbacks haven&rsquo;t just affected me physically, but also affected my educational career and future. </p>
+						<p>Despite the environment that I have grown up in, there have not been many opportunities to better my life. I am not just the only student that has faced setbacks. </p>
+						<p>So, in my opinion, only including traditional public schools in the Richmond Promise is completely absurd. We all have the same dreams, which is to graduate from high school and attend college. Students should be included in the Richmond Promise no matter what type of school they attend, because deep down, we are all students that want to better our lives. The benefits that scholarships give to students are incredible. They wouldn&rsquo;t just help me financially, but by taking away some of the stress that I have with trying to come up with money for my education, it allows me to expand my knowledge by experiencing new things, which would not be possible without the help from scholarships. </p>
+					</div>
 				</div>
-				
 			</div>
 		</div>
 	</body>
